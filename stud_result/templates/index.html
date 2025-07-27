@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Form</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h2>Enter Student Marks</h2>
+    <form action="/result" method="POST" onsubmit="return validateForm()">
+        <label>Name:</label>
+        <input type="text" name="name" required><br>
+
+        <label>Math:</label>
+        <input type="number" name="math" min="0" max="100" required><br>
+
+        <label>Science:</label>
+        <input type="number" name="science" min="0" max="100" required><br>
+
+        <label>English:</label>
+        <input type="number" name="english" min="0" max="100" required><br>
+
+        <label>Marathi:</label>
+        <input type="number" name="marathi" min="0" max="100" required><br>
+
+        <label>Hindi:</label>
+        <input type="number" name="hindi" min="0" max="100" required><br>
+
+        <label>Social Studies:</label>
+        <input type="number" name="social" min="0" max="100" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script src="/static/script.js"></script>
+</body>
+</html>
+x
