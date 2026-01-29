@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Marks</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-image: url("{{ url_for('static', filename='background.jpg') }}");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.92);
+      padding: 25px;
+      width: 320px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    input, button {
+      width: 100%;
+      margin: 6px 0;
+      padding: 8px;
+    }
+
+    button {
+      background: orange;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Enter Student Marks</h2>
+
+    <input type="text" id="name" placeholder="Name">
+
+    <input type="number" id="maths" placeholder="Maths">
+    <input type="number" id="science" placeholder="Science">
+    <input type="number" id="english" placeholder="English">
+    <input type="number" id="marathi" placeholder="Marathi">
+    <input type="number" id="hindi" placeholder="Hindi">
+    <input type="number" id="social" placeholder="Social Studies">
+
+    <button onclick="handleSubmit()">Submit</button>
+
+    <p id="error" style="color:red; display:none;"></p>
+
+    <div class="result" id="resultBox"></div>
+  </div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

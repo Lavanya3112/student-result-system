@@ -1,0 +1,56 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: bold;
+    color: #5C4033; /* Dark brown */
+    background: powderblue url("/static/backtoschool.jpeg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 30px;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+}
+
+form {
+    background: rgba(255, 250, 205, 0.9); /* Transparent lemon yellow */
+    padding: 20px;
+    border-radius: 15px;
+    width: 320px;
+    margin: auto;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid #5C4033;
+}
+
+input, textarea, button {
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #5C4033;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: bold;
+    color: #5C4033;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 8px gold;
+}
+
+
+button {
+    background-color: #ff5733; /* Orange-red */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #ff7f50; /* coral shade */
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
